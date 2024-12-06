@@ -11,9 +11,9 @@ import json
 with open('config.json', 'r') as f: DATA = json.load(f)
 def getenv(var): return os.environ.get(var) or DATA.get(var, None)
 
-bot_token = getenv("TOKEN") 
-api_hash = getenv("HASH") 
-api_id = getenv("ID")
+bot_token = getenv("6877763529:AAEnBU5-te64IVvzA1cTzSV_QAt8taJk4t8") 
+api_hash = getenv("e3b8632e5034801fbeaea7aa3283f442") 
+api_id = getenv("13892075")
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 ss = getenv("STRING")
@@ -74,7 +74,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 	print(message.text)
 
 	# joining chats
-	if "https://t.me/+" in message.text or "https://t.me/joinchat/" in message.text:
+	if "https://t.me/+" in message.text or "https://t.me/ToxicArjun/" in message.text:
 
 		if acc is None:
 			bot.send_message(message.chat.id,f"**String Session is not Set**", reply_to_message_id=message.id)
@@ -272,9 +272,9 @@ https://t.me/b/botusername/4321
 __send public/private posts link as explained above with formate "from - to" to send multiple messages like below__
 
 ```
-https://t.me/xxxx/1001-1010
+https://t.me/Privatearjun 
 
-https://t.me/c/xxxx/101 - 120
+https://t.me/ToxicXsupport
 ```
 
 __note that space in between doesn't matter__
